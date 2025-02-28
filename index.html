@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post {
+            margin-bottom: 20px;
+        }
+        .blog-post img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .blog-post h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Business Insights</h1>
+        <p>Your source for the latest trends in business and marketing.</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Categories</a>
+        <a href="sait.html">About</a>
+    </nav>
+    <div class="container">
+        <div class="blog-post">
+            <img src="campaign-creators-yktK2qaiVHI-unsplash.jpg" alt="Business">
+            <h2>How to Grow Your Business in 2025</h2>
+            <p>Discover strategies to expand your business and attract more customers...</p>
+        </div>
+        <div class="blog-post">
+            <img src="benjamin-child-GWe0dlVD9e0-unsplash.jpg" alt="Marketing">
+            <h2>Top Digital Marketing Trends</h2>
+            <p>Learn about the latest trends in digital marketing and how to apply them.</p>
+        </div>
+        <h3>Subscribe to Our Newsletter</h3>
+        <form id="subscribeForm">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+    <footer>
+        <h3>Site Map</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Categories</a></li>
+            <li><a href="sait.html">About</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            document.getElementById('responseMessage').innerText = `Thank you for subscribing, ${email}!`;
+        });
+    </script>
+</body>
+</html>
